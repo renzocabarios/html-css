@@ -1,0 +1,23 @@
+:root {
+  --bg: #f3eae3;
+  --primary: #3d8168;
+
+  --font-color-dark: #1e2428;
+  --font-color-gray: #97979c;
+  --font-color-white: #ebfffb;
+  --font-bold: 900;
+
+  --border-radius: 15px;
+  --bg-mobile: url("./images/image-product-mobile.jpg");
+  --bg-desktop: url("./images/image-product-desktop.jpg");
+}
+
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+}

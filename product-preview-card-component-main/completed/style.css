@@ -1,0 +1,129 @@
+:root {
+  --bg: #f3eae3;
+  --primary: #3d8168;
+
+  --font-color-dark: #1e2428;
+  --font-color-gray: #97979c;
+  --font-color-white: #ebfffb;
+  --font-bold: 900;
+
+  --border-radius: 15px;
+  --bg-mobile: url("./images/image-product-mobile.jpg");
+  --bg-desktop: url("./images/image-product-desktop.jpg");
+}
+
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg);
+}
+
+.card {
+  margin: 1rem;
+  max-width: 30rem;
+  border-radius: var(--border-radius);
+  background-color: #fff;
+}
+
+.card_image {
+  height: 20rem;
+  max-height: 20rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  background-image: var(--bg-mobile);
+}
+
+.card_details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.price_container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.price {
+  color: var(--primary);
+}
+
+.old_price {
+  text-decoration: line-through;
+}
+
+button {
+  background-color: var(--primary);
+  color: var(--font-color-white);
+  border: none;
+  border-radius: 12px;
+  padding: 1.3rem;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+button img {
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
+.font_xxl {
+  font-size: 3rem;
+}
+
+.font_lg {
+  font-size: 1.5rem;
+}
+
+.font_bold {
+  font-weight: var(--font-bold);
+}
+
+.font_gray {
+  color: var(--font-color-gray);
+}
+
+.spaced {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+    max-width: 60rem;
+    max-height: 35rem;
+  }
+
+  .card_details {
+    width: 50%;
+    height: 100%;
+  }
+
+  .card_image {
+    height: 34rem;
+    max-height: 34rem;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    background-position: center center;
+    background-image: var(--bg-desktop);
+  }
+}
