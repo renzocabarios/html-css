@@ -1,0 +1,16 @@
+:root {
+  --font-color-100: #acaeb5;
+  --font-color-200: #1f2d47;
+  --bg: #d5e1ef;
+  --white: #fff;
+  --radius: 12px;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
