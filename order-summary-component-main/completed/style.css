@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit&family=Red+Hat+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit&family=Red+Hat+Display:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --bg-color: #d6e1ff;
+  --bg-color-1: #f8f9fe;
+  --white: #fff;
+  --color: #382ae1;
+  --font-color: #3d4871;
+  --font-color-1: #abadbc;
+  --radius: 12px;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Open Sans", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--white);
+  max-width: 450px;
+  border-radius: var(--radius);
+}
+
+.description_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background-color: var(--bg-color-1);
+  border-radius: var(--radius);
+}
+
+.plan_row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.plan_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.font_bold {
+  font-weight: 900;
+}
+
+.font_lg {
+  font-size: 1.5rem;
+}
+
+.font_md {
+  font-size: 1rem;
+}
+.line_space {
+  line-height: 1.6;
+}
+.font_bold_md {
+  font-weight: 700;
+}
+
+.font_color {
+  color: var(--font-color);
+}
+
+.font_color_1 {
+  color: var(--font-color-1);
+}
+
+.font_color_2 {
+  color: var(--color);
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: none;
+  color: var(--white);
+  background-color: var(--color);
+}
