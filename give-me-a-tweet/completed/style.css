@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit&family=Overpass:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@500&display=swap");
+:root {
+  --radius: 12px;
+  --color-1: #3b82f6;
+  --color-2: #33c96a;
+  --color-3: #f15e5e;
+  --color-4: #b7bbc5;
+  --color-5: #111111;
+  --color-6: #f1f1f1;
+  --weigth-lg: 600;
+  --weigth-md: 500;
+}
+
+*,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Overpass", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: 5px 10px 10px #888888;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user_details {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.profile_pic {
+  background-color: var(--color-4);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.handle_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.action_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.font_weight_lg {
+  font-weight: var(--weigth-lg);
+}
+
+.font_weight_md {
+  font-weight: var(--weigth-md);
+}
+
+.font_color_1 {
+  color: var(--color-1);
+}
+
+.font_color_2 {
+  color: var(--color-2);
+}
+
+.font_color_3 {
+  color: var(--color-3);
+}
+.font_color_4 {
+  color: var(--color-4);
+}
+
+.font_color_5 {
+  fill: var(--color-5);
+}
