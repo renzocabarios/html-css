@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit&family=Overpass:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@500&display=swap");
+:root {
+  --radius: 12px;
+  --color-1: #1d1d1f;
+  --weight-lg: 700;
+  --weight-md: 500;
+  --weight-sm: 200;
+  --font-lg: 1.6rem;
+}
+
+*,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Overpass", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color_1 {
+  color: var(--color-1);
+}
+
+.font_lg {
+  font-size: var(--font-lg);
+}
+
+.weight_lg {
+  font-weight: var(--weight-lg);
+}
+
+.weight_md {
+  font-weight: var(--weight-md);
+}
+
+.weight_sm {
+  font-weight: var(--weight-sm);
+}
+
+button {
+  font-weight: var(--weight-lg);
+  padding: 1rem;
+  border: none;
+  color: white;
+  background-color: #1d1d1f;
+  border-radius: 8px;
+}
+
+.row {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.setting_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.button_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  max-width: 33rem;
+  box-shadow: 5px 10px 21px #888888;
+  border-radius: 12px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

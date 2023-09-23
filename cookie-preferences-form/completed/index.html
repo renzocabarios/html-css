@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="row">
+          <object data="./assets/cookie.svg"></object>
+          <p class="weight_lg font_lg">Cookie Preferences</p>
+        </div>
+        <p class="weight_sm">
+          Manage your cookie settings. You can enable or disable different types
+          of cookies below.
+        </p>
+
+        <hr />
+
+        <div class="setting_container">
+          <div class="description">
+            <p class="weight_md">Essential Cookies</p>
+            <p class="weight_sm">
+              These cookies are necessary for the website to function and cannot
+              be switched off.
+            </p>
+          </div>
+          <div class="toggle">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="setting_container">
+          <div class="description">
+            <p class="weight_md">Analytics Cookies</p>
+            <p class="weight_sm">
+              These cookies allow us to count visits and traffic sources, so we
+              can measure and improve the performance of our site.
+            </p>
+          </div>
+
+          <div class="toggle">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="setting_container">
+          <div class="description">
+            <p class="weight_md">Marketing Cookies</p>
+            <p class="weight_sm">
+              These cookies help us show you relevant ads.
+            </p>
+          </div>
+          <div class="toggle">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="button_container">
+          <button>Save Preferences</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
