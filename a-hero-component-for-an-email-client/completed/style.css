@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit&family=Overpass:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@500&display=swap");
+:root {
+  --radius: 12px;
+  --color-1: #1d1d1f;
+  --font-color-1: #ffffff;
+  --font-color-2: #abafb7;
+  --bg-color: #000000;
+  --weight-lg: 700;
+  --weight-md: 500;
+  --weight-sm: 200;
+  --font-lg: 1.6rem;
+}
+
+*,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Overpass", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  background-color: var(--bg-color);
+  color: var(--font-color-1);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.features_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.feature_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.font_lg {
+  font-size: 4rem;
+}
+
+.font_bold {
+  font-weight: 900;
+}
+
+.font_color {
+  color: var(--font-color-2);
+}
