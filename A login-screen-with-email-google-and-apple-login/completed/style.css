@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit&family=Overpass:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@500&display=swap");
+:root {
+  --radius: 8px;
+  --dark: #000000;
+  --white: #fff;
+  --accent-1: #4285f4;
+  --font-color-1: #a2a2a7;
+  --font-color-2: #838383;
+  --weight-lg: 700;
+  --weight-md: 500;
+  --weight-sm: 200;
+  --font-lg: 1.6rem;
+}
+*,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Overpass", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: var(--radius);
+  box-shadow: 5px 10px 20px var(--font-color-1);
+  padding: 2rem;
+  gap: 1rem;
+  width: 26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_input {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.form_input input {
+  padding: 0.8rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--font-color-1);
+}
+
+.bg_accent_1 {
+  background-color: var(--accent-1);
+}
+
+.bg_dark {
+  background-color: var(--dark);
+}
+
+.font_color {
+  color: var(--font-color-2);
+}
+
+.accent_1 {
+  color: var(--accent-1);
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: var(--radius);
+  padding: 1rem;
+  color: var(--white);
+}
+
+.font_lg {
+  font-size: 2rem;
+}
+
+.font_md {
+  font-size: 1rem;
+}
+
+.text_center {
+  text-align: center;
+}
