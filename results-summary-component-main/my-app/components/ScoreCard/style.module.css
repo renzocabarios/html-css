@@ -1,0 +1,7 @@
+.container {
+  @apply flex justify-between items-center p-5  rounded-md;
+}
+
+.title_container {
+  @apply flex items-center gap-4;
+}
