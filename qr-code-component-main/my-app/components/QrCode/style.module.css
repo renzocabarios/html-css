@@ -1,0 +1,7 @@
+.container {
+  @apply bg-white flex flex-col text-center justify-center shadow-lg  p-10 rounded gap-9 max-w-lg;
+}
+
+.image {
+  @apply w-full min-h-96 relative rounded;
+}
