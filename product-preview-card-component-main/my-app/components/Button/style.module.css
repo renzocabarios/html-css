@@ -1,0 +1,6 @@
+.container {
+  margin: 1rem;
+  max-width: 30rem;
+  border-radius: var(--border-radius);
+  background-color: #fff;
+}
