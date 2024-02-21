@@ -1,0 +1,4 @@
+.container {
+  max-width: 35rem;
+  @apply p-10 shadow-md flex flex-col gap-4;
+}
